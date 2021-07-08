@@ -10,19 +10,18 @@
   .dropdown-menu li {
     background: #1888ff;
     cursor: pointer;
-    width: 100%;
-}
+  }
   
   .dropdown-menu li:hover {
     background: #5cabff;
-    
   }
   
   .dropdown-menu.clicked {
     display: none;
   }
   .dropdown-menu ul{
-      display: ;
+      margin: 0%;
+      padding: 0%;
   }
 
   .dropdown-link {
