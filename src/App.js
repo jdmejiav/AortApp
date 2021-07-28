@@ -15,8 +15,8 @@ function App() {
     
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={WordSearchPage}/>
-          <Route exact path="/jeje" component={CrosswordPage} />
+          <Route exact path="/" component={CrosswordPage}/>
+          <Route exact path="/wordsearch" component={WordSearchPage}/>
           <Route exact path="/ingreso" component={Login} />
           <Route exact path="/registro" component={Logout} />
           <Route exact path="/crossword" component={CrosswordPage} />

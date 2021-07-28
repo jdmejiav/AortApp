@@ -6,7 +6,7 @@ export const MenuItems = [
     },
     {
       title: 'Sopa de letras',
-      path: '/',
+      path: '/wordsearch',
       cName: 'dropdown-link'
     },
     {
