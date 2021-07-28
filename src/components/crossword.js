@@ -39,7 +39,7 @@ const data = {
       },
       4: {
         clue: 'Últimas arterias (ramificación) de la aorta',
-        answer: 'ISIASASAS',
+        answer: 'ILIACAS',
         row: 7,
         col: 5,
       },

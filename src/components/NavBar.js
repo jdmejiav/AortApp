@@ -50,7 +50,6 @@ function NavBar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to='/services'
               className='nav-links'
               onClick={closeMobileMenu}
             >
@@ -60,7 +59,7 @@ function NavBar() {
           </li>
           <li className='nav-item'>
             <Link
-              to='/login'
+              to='/login '
               className='nav-links'
               onClick={closeMobileMenu}
             >
