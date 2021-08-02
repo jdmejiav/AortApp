@@ -11,7 +11,7 @@ export const MenuItems = [
     },
     {
       title: 'Ahorcadito',
-      path: '/',
+      path: '/ahorcadito',
       cName: 'dropdown-link'
     },
 ];

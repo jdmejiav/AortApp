@@ -1,0 +1,39 @@
+
+.img-progress{
+    height: 20%;
+    width: 20%;
+}
+
+
+.letra{
+    margin-bottom: 30px;
+    font-size: xxx-large;
+    align-items: center;
+    width: 60px;
+    background-color: white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-color: brown;
+    margin-right: 1rem;    
+    justify-content: center;
+}
+
+.container-palabras{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-ahorcadito{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-check{
+    justify-content: center;
+    text-align: center;
+    background-color: #11a7e1;
+    border-radius: 30px;
+    width: 100px;
+}
