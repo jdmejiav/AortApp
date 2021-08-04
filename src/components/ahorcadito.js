@@ -132,7 +132,7 @@ export default class Ahorcadito extends Component {
           type="text"
           placeHolder="escriba acá una palabra"
           onChange={(e) => {
-            this.setState({ input: e.target.value });
+            this.setState({ input: e.target.value.toLowerCase()});
           }}
         />
         <a

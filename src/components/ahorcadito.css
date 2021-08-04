@@ -19,6 +19,9 @@
     justify-content: center;
 }
 
+.letras{
+    margin-left: 10px;
+}
 .container-palabras{
     display: flex;
     flex-direction: column;
@@ -35,6 +38,7 @@
 .btn-check{
     padding-top: 10px;
     margin-top: 30px;
+    margin-bottom:30px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -66,6 +70,23 @@
 }
 
 .img-pistas{
+    
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 960px) {
+    .img-pistas{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-progress{
+        height: 40%;
+        width: 40%;
+        margin: 20px;
+    }
+
 }
