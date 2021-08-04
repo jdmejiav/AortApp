@@ -16,11 +16,17 @@ export default class Ahorcadito extends Component {
   constructor() {
     super();
     this.state = {
-      palabras: ["palabra", "palabra2", "palabra3"],
+      palabras: ["hepatica", "costocervical", "cuello"],
       currentWordIndex: 0,
       currentImg: base,
       input: "",
       wordToShow: "",
+      hints: {
+        "hepatica": "Arteria que irriga el hígado",
+        "costocervical": "La arteria escapular dorsal de que tronco se origina?",
+        "cuello": "Uno de los territorios perfundidos por la arteria subclavia",
+      },
+      
     };
   }
 
@@ -45,7 +51,11 @@ export default class Ahorcadito extends Component {
 
     const onClick = (e) => {
       let temp = this.state.wordToShow;
-      for (let i = 0; i < this.state.palabras[this.state.currentWordIndex].length; i++) {
+      for (
+        let i = 0;
+        i < this.state.palabras[this.state.currentWordIndex].length;
+        i++
+      ) {
         if (
           this.state.input.charAt(i) ==
           this.state.palabras[this.state.currentWordIndex].charAt(i)
@@ -89,38 +99,51 @@ export default class Ahorcadito extends Component {
     };
     return (
       <div className="container-ahorcadito">
-        <img src={this.state.currentImg} className="img-progress"></img>
+        <div className="img-pistas">
+          <img src={this.state.currentImg} className="img-progress"></img>
+          <div style={{"display":"flex",
+        "flex-direction":"column",
+        "width":"200px"}}>
+            <h2 style={{"padding-top":"50px"}}>Pista</h2>
+            <p>
+              {
+                this.state.hints[
+                  this.state.palabras[this.state.currentWordIndex]
+                ]
+              }
+            </p>
+          </div>
+        </div>
 
         <div className="letras">
           {this.state.wordToShow.split("").map((i) => {
             return (
               <input
                 className="letra"
-                value={i}
+                value={i.toUpperCase()}
                 style={{ backgroud: "#fff" }}
                 disabled
               />
             );
           })}
         </div>
-          <input
-            className="input-word"
-            type="text"
-            placeHolder="escriba acá una palabra"
-            onChange={(e) => {
-              this.setState({ input: e.target.value });
-            }}
-          />
-          <a
-            type="submit"
-            className="btn-check"
-            onClick={(e) => {
-              onClick(e);
-            }}
-          >
-            Verificar
-          </a>
-
+        <input
+          className="input-word"
+          type="text"
+          placeHolder="escriba acá una palabra"
+          onChange={(e) => {
+            this.setState({ input: e.target.value });
+          }}
+        />
+        <a
+          type="submit"
+          className="btn-check"
+          onClick={(e) => {
+            onClick(e);
+          }}
+        >
+          Verificar
+        </a>
       </div>
     );
   }

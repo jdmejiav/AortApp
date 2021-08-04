@@ -45,7 +45,9 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
-
+.navbar-logo:hover{
+  color: #1888ff;
+}
 .nav-links:hover {
   background-color: #1888ff;
   border-radius: 4px;
@@ -55,7 +57,9 @@
 .fa-bars {
   color: #fff;
 }
-
+.fa-bars:hover{
+  color: #1888ff;
+}
 .nav-links-mobile {
   display: none;
 }
