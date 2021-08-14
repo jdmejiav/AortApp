@@ -9,20 +9,21 @@ import Login from "./pages/login";
 import Logout from "./pages/logout";
 import WordSearchPage from "./pages/wordsearch";
 import AhorcaditoPage from "./pages/ahorcadito";
-//import Rompecabezas from "./components/jigsaw";
+import Rompecabezas from "./pages/rompecabezas";
 
 function App() {
 
   return (
     <BrowserRouter>
       <Switch>
+        <Route exact path="/" component={Rompecabezas} />
         <Route exact path="/" component={CrosswordPage} />
         <Route exact path="/wordsearch" component={WordSearchPage} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={Logout} />
         <Route exact path="/crossword" component={CrosswordPage} />
         <Route exact path="/ahorcadito" component={AhorcaditoPage} />
-
+        
       </Switch>
     </BrowserRouter>
   );
