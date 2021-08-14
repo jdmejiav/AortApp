@@ -22,11 +22,10 @@ export default class Ahorcadito extends Component {
       input: "",
       wordToShow: "",
       hints: {
-        "hepatica": "Arteria que irriga el hígado",
-        "costocervical": "La arteria escapular dorsal de que tronco se origina?",
-        "cuello": "Uno de los territorios perfundidos por la arteria subclavia",
+        hepatica: "Arteria que irriga el hígado",
+        costocervical: "La arteria escapular dorsal de que tronco se origina?",
+        cuello: "Uno de los territorios perfundidos por la arteria subclavia",
       },
-      
     };
   }
 
@@ -51,6 +50,7 @@ export default class Ahorcadito extends Component {
 
     const onClick = (e) => {
       let temp = this.state.wordToShow;
+      var flag = false;
       for (
         let i = 0;
         i < this.state.palabras[this.state.currentWordIndex].length;
@@ -60,13 +60,11 @@ export default class Ahorcadito extends Component {
           this.state.input.charAt(i) ==
           this.state.palabras[this.state.currentWordIndex].charAt(i)
         ) {
-          for (
-            let j = 0;
-            j < this.state.palabras[this.state.currentWordIndex].length;
-            j++
+          for (let j = 0 ; j < this.state.palabras[this.state.currentWordIndex].length ; j++
           ) {
             console.log(temp);
             if (j == i) {
+              flag=true;
               temp = replaceAt(
                 j,
                 this.state.palabras[this.state.currentWordIndex].charAt(i),
@@ -79,7 +77,7 @@ export default class Ahorcadito extends Component {
         }
         if (
           this.state.palabras[this.state.currentWordIndex] !=
-          this.state.input.trim()
+          this.state.input.trim() && !flag
         ) {
           if (this.state.currentImg == base) {
             this.setState({ currentImg: cabeza });
@@ -101,10 +99,14 @@ export default class Ahorcadito extends Component {
       <div className="container-ahorcadito">
         <div className="img-pistas">
           <img src={this.state.currentImg} className="img-progress"></img>
-          <div style={{"display":"flex",
-        "flex-direction":"column",
-        "width":"200px"}}>
-            <h2 style={{"padding-top":"50px"}}>Pista</h2>
+          <div
+            style={{
+              display: "flex",
+              "flex-direction": "column",
+              width: "200px",
+            }}
+          >
+            <h2 style={{ "padding-top": "50px" }}>Pista</h2>
             <p>
               {
                 this.state.hints[
@@ -130,9 +132,9 @@ export default class Ahorcadito extends Component {
         <input
           className="input-word"
           type="text"
-          placeHolder="escriba acá una palabra"
+          placeHolder="Escriba acá una palabra"
           onChange={(e) => {
-            this.setState({ input: e.target.value.toLowerCase()});
+            this.setState({ input: e.target.value.toLowerCase() });
           }}
         />
         <a

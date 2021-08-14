@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import "./wordsearch.css"
 
+
+// Code Taken from https://codepen.io/imdigvijay/full/gqzJKX
+// Modified to work on this project
+/*
 var completeList = [
   "Andra Pradesh",
   "Arunachal Pradesh",
@@ -265,9 +269,12 @@ var completeList = [
   "Selenium",
   "Automation",
 ];
+*/
+
+var completeList = ["Aorta","Arco Aortico","Subclavia","Iliaca","Aorta Abdominal","Aorta Celiaca","Mesenterica","Gonadal"];
 function getRandomWords() {
   let lst = [];
-  for (var i = 0; i < 5; i++) {
+  for (var i = 0; i < 7; i++) {
     let currItem =
       completeList[Math.floor(Math.random() * completeList.length)];
     if (lst.indexOf(currItem) === -1) {
@@ -330,7 +337,7 @@ WSGenerator.prototype.initGrid = function () {
   }
   this.gridArr = grid.slice();
   for (var i = 0; i < this.wordList.length; i++) {
-    this.populateWord(this.wordList[i].text);
+    this.populateWord(this.wordList[i].text.replace(" ",""));
   }
   this.populateUnusedBoxes();
 };

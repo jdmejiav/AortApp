@@ -23,7 +23,7 @@ function NavBar() {
 
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
-      setDropdown(false);
+      setDropdown(true);
     } else {
       setDropdown(false);
     }
@@ -68,7 +68,7 @@ function NavBar() {
           </li>
           <li>
             <Link
-              to='/registro'
+              to='/signup'
               className='nav-links-mobile'
               onClick={closeMobileMenu}
             >

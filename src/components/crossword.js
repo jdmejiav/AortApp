@@ -12,19 +12,19 @@ const data = {
         col: 7,
       },
       2: {
-        clue: 'Nombre de la porción superior de la aorta (6 Letras)',
+        clue: 'Nombre de la porción craneal de la aorta (6 Letras)',
         answer: 'CAYADO',
         row: 0,
         col: 9,
       },
       4: {
-        clue: 'La arteria aorta se origina en la base del ventrículo (9 Letras)',
+        clue: 'La aorta se origina en la base del ventrículo (9 Letras)',
         answer: 'IZQUIERDA',
         row: 7,
         col: 5,
       },
       6: {
-        clue: 'La arteria aorta se origina en la base del ventrículo (11 Letras)',
+        clue: 'La aorta se origina en la base del ventrículo (11 Letras)',
         answer: 'ADVERTENCIA',
         row: 11,
         col: 3,
@@ -65,9 +65,12 @@ export default class CrosswordComponent extends Component {
     render(){
         var estado = false
         return (
-            <div>
+            <div style={{    display: "flex",
+              "flex-direction": "column",
+             "align-items": "center",
+              "justify-content": "center",}}>
                 <div className ="container-crossword" style = {{
-                    width:"80%",
+                    width:"60%",
                     "padding-top":"40px",
                   }}>
                     <Crossword 

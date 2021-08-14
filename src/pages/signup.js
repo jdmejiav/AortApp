@@ -1,29 +1,62 @@
-import React from 'react'
+import React from "react";
 
+export default class SignUp extends Component {
+  constructor() {
+    super();
+    this.state = {
+      email: "",
+      pass: "",
+    };
+  }
 
+  render() {
+    const handleOnSubmit = (e) => {
+      firebase
+        .auth()
+        .createUserWithEmailAndPassword(this.state.email, this.state.pass)
+        .then((userCredential) => {
+          // Signed in
+          var user = userCredential.user;
+          window.location("/")
+          console.log("funcinó")
+          // ...
+        })
+        .catch((error) => {
+          var errorCode = error.code;
+          var errorMessage = error.message;
+          alert(errorMessage);
+          // ..
+        });
+    };
 
-const SignUp =  ({history}) =>{
-
-    handleSignUp = () =>{
-
-    }
- 
-
-    return(
-        <div>
-            <form onSubMit ={handleSignUp}>
-                <label> Email
-                    <input name="email" placeholder ="Email" type="email"/>
-                </label>
-                <label> Contraseña
-                    <input name="password" placeholder ="Password" type="password"/>
-                </label>
-                <button type = "submit"> Registrarse</button>
-            </form>
-
+    return (
+      <div className="login-container">
+        <div className="input-container">
+          <form>
+            <input
+              type="email"
+              placeholder="correo@example.com"
+              onChange={(e) => {
+                this.setState({ email: e.target.value });
+              }}
+            ></input>
+            <input
+              type="password"
+              placeholder="contraseña"
+              onChange={(e) => {
+                this.setState({ email: e.target.value });
+              }}
+            ></input>
+            <button
+              onSubmmit={(e) => {
+                handleOnSubmit(e);
+              }}
+            >
+              Ingresar
+            </button>
+          </form>
         </div>
-    )
+      </div>
+    );
+  }
 }
-
-
-export default SignUp

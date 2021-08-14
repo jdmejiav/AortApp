@@ -15,7 +15,9 @@
     color: #fff;
     text-decoration: none;
   }
-  
+
+
+
 
   .cell {
     width: 40px;
@@ -32,7 +34,7 @@
     user-select: none;
 
   }
-  
+
   .cell:last-of-type {
     border-right-width: 0px;
   }
