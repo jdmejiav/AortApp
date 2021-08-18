@@ -32,7 +32,7 @@ const data = {
     },
     across: {
       3: {
-        clue: 'Nombre por donde la aorta pasa por el diafragma (5 Letras)',
+        clue: 'Nombre de la porción por cual la aorta cruza por el diafragma (5 Letras)',
         answer: 'HIATO',
         row: 5,
         col: 5,
