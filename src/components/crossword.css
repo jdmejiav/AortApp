@@ -1,0 +1,62 @@
+.btn-checkear {
+  padding-top: 5px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  vertical-align: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 4px;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  text-decoration: dashed;
+}
+
+.btn-checkear:hover {
+  transition: all 0.3s ease-out;
+  background-color: transparent;
+  color: black;
+  border-radius: 4px;
+  border: 2px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn-regresar-home {
+  padding-top: 5px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  justify-content: center;
+  vertical-align: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 4px;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+  text-decoration: dashed;
+}
+
+.btn-regresar-home:hover {
+  transition: all 0.3s ease-out;
+  background-color: transparent;
+  color: black;
+  border-radius: 4px;
+  border: 2px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.container-crossword {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  padding-top: 40px;
+}
