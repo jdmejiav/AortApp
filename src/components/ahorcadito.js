@@ -138,7 +138,6 @@ export default class Ahorcadito extends Component {
           }}
         />
         <a
-          type="submit"
           className="btn-check"
           onClick={(e) => {
             onClick(e);

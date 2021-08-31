@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Wheel } from "react-custom-roulette";
 import NavBar from "../components/NavBar";
+import "../styles/roulette.css";
+const routes = ["/ahorcadito", "/card", "/crossword", "/jigsaw", "/wordsearch"];
 
 const data = [
   {
@@ -11,9 +13,9 @@ const data = [
     },
   },
   {
-    option: "Encuentra los pares",
+    option: "pares",
     style: {
-      backgroundColor: "##FFD7B0",
+      backgroundColor: "#FFD7B0",
       textColor: "black",
     },
   },
@@ -46,7 +48,7 @@ export default class HomePage extends Component {
     this.state = {
       mustSprint: false,
       prize: 0,
-      inicio: false,
+      inicio: true,
     };
   }
 
@@ -57,24 +59,38 @@ export default class HomePage extends Component {
       this.setState({ mustSprint: true });
     };
     return (
-      <div>
+      <div >
         <NavBar />
+        <div className="home-container">
         <Wheel
           mustStartSpinning={this.state.mustSprint}
           prizeNumber={this.state.prize}
           data={data}
           backgroundColors={["#3e3e3e", "#df3428"]}
           textColors={["#ffffff"]}
+          innerBorderWidth = {5}
+          outerBorderWidth = {0}
+          radiusLineWidth = {0}
           onStopSpinning={(e) => {
+            this.setState({ inicio: false });
             console.log(data[this.state.prize]);
           }}
         />
 
         {this.state.inicio ? (
-          <button onClick={handleSpinClick}>SPIN</button>
+          <a className="btn-spin" onClick={handleSpinClick}>
+              Juegar
+          </a>
         ) : (
-          <button onClick={handleSpinClick}>Ir a juego</button>
+          <a
+            className="btn-ir"
+            href={routes[this.state.prize]}
+          >
+            Ir a juego
+          </a>
+        
         )}
+        </div>
       </div>
     );
   }
