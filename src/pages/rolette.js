@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import { Wheel } from "react-custom-roulette";
-import NavBar from "../components/NavBar";
+import {Redirect,Link} from "react-router-dom"
+import NavBarLog from "../components/NavBarLog";
 import "../styles/roulette.css";
+
+
+
 const routes = ["/ahorcadito", "/card", "/crossword", "/jigsaw", "/wordsearch"];
 
 const data = [
@@ -58,9 +62,16 @@ export default class HomePage extends Component {
       this.setState({ prize: newPrizeNumber });
       this.setState({ mustSprint: true });
     };
+
+    const handleRedirect = ()=>{
+      return <Redirect to={routes[this.state.prize]}/>
+    }
+
+
+
     return (
       <div >
-        <NavBar />
+        <NavBarLog />
         <div className="home-container">
         <Wheel
           mustStartSpinning={this.state.mustSprint}
@@ -82,12 +93,12 @@ export default class HomePage extends Component {
               Jugar
           </a>
         ) : (
-          <a
+          <Link
             className="btn-ir"
-            href={routes[this.state.prize]}
+            to={routes[this.state.prize]}
           >
             Ir a juego
-          </a>
+          </Link>
         
         )}
         </div>

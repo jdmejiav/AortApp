@@ -1,35 +1,32 @@
 import React, { useState } from "react";
 import {Button} from './button'
-import { Link } from "react-router-dom";
+import { Link,useHistory } from "react-router-dom";
 import "./Navbar.css";
-import Dropdown from './dropdown'
-
+import { useAuth } from "../firebase/AuthContext";
 
 
 function NavBar() {
+
+  const { currentUser, logout } = useAuth()
+  const history = useHistory();
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
 
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(true);
-    } else {
-      setDropdown(false);
+  const handleLogout = async () =>{
+    try {
+      await logout()
+      history.push('/')
+    } catch {
+
     }
-  };
+  }
+
 
   return (
+    
     <>
       <nav className='navbar'>
         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
@@ -45,25 +42,11 @@ function NavBar() {
             </Link>
           </li>
           <li className='nav-item'>
-            <Link
-              to='/login '
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Ingreso
-            </Link>
-          </li>
-          <li>
-            <Link
-              to='/signup'
-              className='nav-links-mobile'
-              onClick={closeMobileMenu}
-            >
-              Registro
+            <Link to='/' className='nav-links' onClick={handleLogout}>
+              Logout
             </Link>
           </li>
         </ul>
-        <Button />
       </nav>
     </>
   );
