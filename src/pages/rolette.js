@@ -79,7 +79,7 @@ export default class HomePage extends Component {
 
         {this.state.inicio ? (
           <a className="btn-spin" onClick={handleSpinClick}>
-              Juegar
+              Jugar
           </a>
         ) : (
           <a
