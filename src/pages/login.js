@@ -21,7 +21,7 @@ export default function Login() {
       await login(emailRef.current.value, passwordRef.current.value);
       history.push("/");
     } catch {
-      setError("Fallo al crear la cuenta");
+      setError("Fallo al Iniciar Sesión");
     }
 
     setLoading(false);
