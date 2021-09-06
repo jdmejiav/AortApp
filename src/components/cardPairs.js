@@ -9,12 +9,13 @@ import {
 } from "@material-ui/core";
 import Card from "./card";
 import "./cardPairs.scss";
-import base from "./images/base.png";
-import cabeza from "./images/cabeza.png";
-import cuerpo from "./images/cuerpo.png";
 
-import brazoDerecho from "./images/brazo derecho.png";
-import brazoIzquierdo from "./images/brazo izquierdo.png";
+import base from "./images/axilar.jpeg";
+import cabeza from "./images/celateral.jpeg";
+import cuerpo from "./images/mesentrica.jpeg";
+
+import brazoDerecho from "./images/ovarica.jpeg";
+
 
 import piernaDerecha from "./images/pierna derecha.png";
 import piernaIzquierda from "./images/pierna izquierda.png";
@@ -24,23 +25,23 @@ import piernaIzquierda from "./images/pierna izquierda.png";
 const uniqueElementsArray = [
   {
     type: "Pikachu",
-    image: cabeza
+    image: base
   },
   {
     type: "ButterFree",
-    image: cuerpo
+    image: cabeza
   },
   {
     type: "Charmander",
-    image: brazoDerecho
+    image: cuerpo
   },
   {
     type: "Squirtle",
-    image: brazoIzquierdo
+    image: brazoDerecho
   },
   {
     type: "Pidgetto",
-    image: brazoDerecho
+    image: piernaDerecha
   },
   {
     type: "Bulbasaur",
