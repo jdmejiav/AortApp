@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames";
-import pokeball from "./images/base.png";
+import pokeball from "./images/logo512.png";
 import "./card.scss";
 import { useState } from "react";
 

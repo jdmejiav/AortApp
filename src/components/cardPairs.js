@@ -7,6 +7,10 @@ import {
   Button,
   DialogTitle
 } from "@material-ui/core";
+
+import {Link} from "react-router-dom";
+
+
 import Card from "./card";
 import "./cardPairs.scss";
 
@@ -64,6 +68,9 @@ export default function CardPairs() {
   const [cards, setCards] = useState(
     shuffleCards.bind(null, uniqueElementsArray.concat(uniqueElementsArray))
   );
+
+  const [finish,setFinish] = useState(false);
+
   const [openCards, setOpenCards] = useState([]);
   const [clearedCards, setClearedCards] = useState({});
   const [shouldDisableAllCards, setShouldDisableAllCards] = useState(false);
@@ -87,6 +94,7 @@ export default function CardPairs() {
       const highScore = Math.min(moves, bestScore);
       setBestScore(highScore);
       localStorage.setItem("bestScore", highScore);
+      setFinish(true);
     }
   };
   const evaluate = () => {
@@ -147,9 +155,9 @@ export default function CardPairs() {
   return (
     <div className="App">
       <header>
-        <h3>Play the Flip card game</h3>
+        <h3>Encuentra los pares</h3>
         <div>
-          Select two cards with same content consequtively to make them vanish
+          Selecciona dos cartas con el mismo contenido consecutivamente para hacer que se desaparezcan
         </div>
       </header>
       <div className="container">
@@ -170,7 +178,7 @@ export default function CardPairs() {
       <footer>
         <div className="score">
           <div className="moves">
-            <span className="bold">Moves:</span> {moves}
+            <span className="bold">Movimientos:</span> {moves}
           </div>
           {localStorage.getItem("bestScore") && (
             <div className="high-score">
@@ -180,7 +188,7 @@ export default function CardPairs() {
         </div>
         <div className="restart">
           <Button onClick={handleRestart} color="primary" variant="contained">
-            Restart
+            Reiniciar
           </Button>
         </div>
       </footer>
@@ -192,18 +200,17 @@ export default function CardPairs() {
         aria-describedby="alert-dialog-description"
       >
         <DialogTitle id="alert-dialog-title">
-          Hurray!!! You completed the challenge
+          Felicitaciones, completaste el juego
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            You completed the game in {moves} moves. Your best score is{" "}
-            {bestScore} moves.
+            Completaste el juego en {moves} movimientos.
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleRestart} color="primary">
-            Restart
-          </Button>
+          <Link className="btn-volver" to="/">
+            Volver
+          </Link>
         </DialogActions>
       </Dialog>
     </div>

@@ -9,8 +9,9 @@
     cursor: pointer;
     
     img {
+      padding-top: 30%;
       width: 95%;
-      height: 95%;
+      height: 60%;
     }
     
     .card-face {
@@ -32,3 +33,31 @@
       opacity: 0;
     }
   }
+
+  .btn-volver{
+
+
+    justify-content: center;
+    vertical-align: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 4px;
+    width: 120px;
+    height: 30px;
+    cursor: pointer;
+    text-decoration: dashed;
+
+}
+
+.btn-volver:hover{
+    
+    transition: all 0.3s ease-out;
+    background-color: transparent;
+    color: black;
+    border-radius: 4px;
+    border: 2px solid var(--primary);
+    transition: all 0.3s ease-out;
+}
