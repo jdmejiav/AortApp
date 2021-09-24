@@ -39,17 +39,17 @@ export default function Signup() {
           <div className="login-container">
             <h1 className="titulo-login">Registro</h1>
             {error && <h1>{error}</h1>}
-            <form onSubmit={handleSubmit} className="form-container">
+            
               <input className="input-login" type="email" placeholder="Correo" autoFocus required ref={emailRef} />
               
               <input className="input-login" type="password" placeholder="Contraseña" required ref={passwordRef} />
               <div className="btnContainer">
-                <button className= "btn-iniciar-sesion"type="submit" disabled={loading}>
+                <a className= "btn-iniciar-sesion" onClick={handleSubmit} disabled={loading}>
                   Registrate
-                </button>
+                </a>
                 <p>Ya tienes cuenta? <Link to='/login'><span>Inicia Sesión</span></Link></p>
               </div>
-            </form>
+            
           </div>
           <div className="login-img-container">
             <img className="login-img" src={loginImg}></img>

@@ -36,14 +36,14 @@ export default function Login() {
           <div className="login-container">
             <h1 className="titulo-login">Inicia Sesión</h1>
             {error && <h1>{error}</h1>}
-            <form onSubmit={handleSubmit} className="form-container">
+            
               <input className="input-login" type="email" placeholder="Correo" autoFocus required ref={emailRef} />
               
               <input className="input-login" type="password" placeholder="Contraseña" required ref={passwordRef} />
               <div className="btnContainer">
-                <button className= "btn-iniciar-sesion"type="submit" disabled={loading}>
+                <a onClick ={handleSubmit} className= "btn-iniciar-sesion" disabled={loading}>
                   Inicia Sesión
-                </button>
+                </a>
                 <p>
                   No tienes cuenta?{" "}
                   <Link to="/signup">
@@ -52,7 +52,7 @@ export default function Login() {
                 </p>
                 
               </div>
-            </form>
+            
           </div>
           <div className="login-img-container">
             <img className="login-img" src={loginImg}></img>
