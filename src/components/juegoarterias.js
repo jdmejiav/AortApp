@@ -13,14 +13,14 @@ export default class JuegoArterias extends Component {
         { value: "4", label: "Arteria Abdominal" },
         { value: "5", label: "Arteria Mesentérica Caudal" },
         { value: "6", label: "Arteria Sacial Mediana" },
-        { value: "7", label: "Arteria Aórtico" },
-        { value: "8", label: "Arteria Aórtico" },
-        { value: "9", label: "Arteria Aórtico" },
-        { value: "10", label: "Arteria Aórtico" },
-        { value: "11", label: "Arteria Aórtico" },
-        { value: "12", label: "Arteria Aórtico" },
-        { value: "13", label: "Arteria Aórtico" },
-        { value: "14", label: "Arteria Aórtico" },
+        { value: "7", label: "Arteria Iliaca Interna izquierda" },
+        { value: "8", label: "Arteria Iliaca Externa izquierda" },
+        { value: "9", label: "Arteria Renal Izquierda" },
+        { value: "10", label: "Arteria Meséntrica cranial" },
+        { value: "11", label: "Arteria Subclavia" },
+        { value: "12", label: "Arteria Braquial" },
+        { value: "13", label: "Arteria Axilar" },
+        { value: "14", label: "Arteria Carótida común Izquierda" },
       ],
     };
   }
@@ -32,7 +32,7 @@ export default class JuegoArterias extends Component {
       <div className="center padding-top margin-bottom">
         <ul class="lista-juego">
           <li class="imagen">
-            <img style={{}} src={img}></img>
+            <img src={img}></img>
           </li>
           <li class="item">
             <span>1:</span>
