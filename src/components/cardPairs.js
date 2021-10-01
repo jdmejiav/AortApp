@@ -5,11 +5,10 @@ import {
   DialogContent,
   DialogContentText,
   Button,
-  DialogTitle
+  DialogTitle,
 } from "@material-ui/core";
 
-import {Link} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 import Card from "./card";
 import "./cardPairs.scss";
@@ -20,37 +19,34 @@ import cuerpo from "./images/mesentrica.jpeg";
 
 import brazoDerecho from "./images/ovarica.jpeg";
 
-
 import piernaDerecha from "./images/pierna derecha.png";
 import piernaIzquierda from "./images/pierna izquierda.png";
-
-
 
 const uniqueElementsArray = [
   {
     type: "Pikachu",
-    image: base
+    image: base,
   },
   {
     type: "ButterFree",
-    image: cabeza
+    image: cabeza,
   },
   {
     type: "Charmander",
-    image: cuerpo
+    image: cuerpo,
   },
   {
     type: "Squirtle",
-    image: brazoDerecho
+    image: brazoDerecho,
   },
   {
     type: "Pidgetto",
-    image: piernaDerecha
+    image: piernaDerecha,
   },
   {
     type: "Bulbasaur",
-    image: piernaIzquierda
-  }
+    image: piernaIzquierda,
+  },
 ];
 
 function shuffleCards(array) {
@@ -69,7 +65,7 @@ export default function CardPairs() {
     shuffleCards.bind(null, uniqueElementsArray.concat(uniqueElementsArray))
   );
 
-  const [finish,setFinish] = useState(false);
+  const [finish, setFinish] = useState(false);
 
   const [openCards, setOpenCards] = useState([]);
   const [clearedCards, setClearedCards] = useState({});
@@ -157,7 +153,8 @@ export default function CardPairs() {
       <header>
         <h3>Encuentra los pares</h3>
         <div>
-          Selecciona dos cartas con el mismo contenido consecutivamente para hacer que se desaparezcan
+          Selecciona dos cartas con el mismo contenido consecutivamente para
+          hacer que se desaparezcan
         </div>
       </header>
       <div className="container">

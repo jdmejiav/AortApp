@@ -69,11 +69,13 @@ export default class CrosswordComponent extends Component {
   render() {
     var estado = false;
     return (
-      <div style = {{
-        display :"flex",
-        "flex-direction":"row",
-        "justifyContent":"center"
-      }}>
+      <div
+        style={{
+          display: "flex",
+          "flex-direction": "row",
+          justifyContent: "center",
+        }}
+      >
         <div className="container-crossword">
           <Crossword
             useStorage={false}

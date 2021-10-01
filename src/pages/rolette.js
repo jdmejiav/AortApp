@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import { Wheel } from "react-custom-roulette";
-import {Redirect,Link} from "react-router-dom"
+import { Redirect, Link } from "react-router-dom";
 import NavBarLog from "../components/NavBarLog";
 import "../styles/roulette.css";
-
-
 
 const routes = ["/ahorcadito", "/card", "/crossword", "/jigsaw", "/wordsearch"];
 
@@ -63,44 +61,38 @@ export default class HomePage extends Component {
       this.setState({ mustSprint: true });
     };
 
-    const handleRedirect = ()=>{
-      return <Redirect to={routes[this.state.prize]}/>
-    }
-
-
+    const handleRedirect = () => {
+      return <Redirect to={routes[this.state.prize]} />;
+    };
 
     return (
-      <div >
+      <div>
         <NavBarLog />
         <div className="home-container">
-        <Wheel
-          mustStartSpinning={this.state.mustSprint}
-          prizeNumber={this.state.prize}
-          data={data}
-          backgroundColors={["#3e3e3e", "#df3428"]}
-          textColors={["#ffffff"]}
-          innerBorderWidth = {5}
-          outerBorderWidth = {0}
-          radiusLineWidth = {0}
-          onStopSpinning={(e) => {
-            this.setState({ inicio: false });
-            console.log(data[this.state.prize]);
-          }}
-        />
+          <Wheel
+            mustStartSpinning={this.state.mustSprint}
+            prizeNumber={this.state.prize}
+            data={data}
+            backgroundColors={["#3e3e3e", "#df3428"]}
+            textColors={["#ffffff"]}
+            innerBorderWidth={5}
+            outerBorderWidth={0}
+            radiusLineWidth={0}
+            onStopSpinning={(e) => {
+              this.setState({ inicio: false });
+              console.log(data[this.state.prize]);
+            }}
+          />
 
-        {this.state.inicio ? (
-          <a className="btn-spin" onClick={handleSpinClick}>
+          {this.state.inicio ? (
+            <a className="btn-spin" onClick={handleSpinClick}>
               Jugar
-          </a>
-        ) : (
-          <Link
-            className="btn-ir"
-            to={routes[this.state.prize]}
-          >
-            Ir a juego
-          </Link>
-        
-        )}
+            </a>
+          ) : (
+            <Link className="btn-ir" to={routes[this.state.prize]}>
+              Ir a juego
+            </Link>
+          )}
         </div>
       </div>
     );

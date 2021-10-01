@@ -36,23 +36,38 @@ export default function Login() {
           <div className="login-container">
             <h1 className="titulo-login">Inicia Sesión</h1>
             {error && <h1>{error}</h1>}
-            
-              <input className="input-login" type="email" placeholder="Correo" autoFocus required ref={emailRef} />
-              
-              <input className="input-login" type="password" placeholder="Contraseña" required ref={passwordRef} />
-              <div className="btnContainer">
-                <a onClick ={handleSubmit} className= "btn-iniciar-sesion" disabled={loading}>
-                  Inicia Sesión
-                </a>
-                <p>
-                  No tienes cuenta?{" "}
-                  <Link to="/signup">
-                    <span>Registrate</span>
-                  </Link>
-                </p>
-                
-              </div>
-            
+
+            <input
+              className="input-login"
+              type="email"
+              placeholder="Correo"
+              autoFocus
+              required
+              ref={emailRef}
+            />
+
+            <input
+              className="input-login"
+              type="password"
+              placeholder="Contraseña"
+              required
+              ref={passwordRef}
+            />
+            <div className="btnContainer">
+              <a
+                onClick={handleSubmit}
+                className="btn-iniciar-sesion"
+                disabled={loading}
+              >
+                Inicia Sesión
+              </a>
+              <p>
+                No tienes cuenta?{" "}
+                <Link to="/signup">
+                  <span>Registrate</span>
+                </Link>
+              </p>
+            </div>
           </div>
           <div className="login-img-container">
             <img className="login-img" src={loginImg}></img>

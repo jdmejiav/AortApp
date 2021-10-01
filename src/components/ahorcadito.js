@@ -60,11 +60,14 @@ export default class Ahorcadito extends Component {
           this.state.input.charAt(i) ==
           this.state.palabras[this.state.currentWordIndex].charAt(i)
         ) {
-          for (let j = 0 ; j < this.state.palabras[this.state.currentWordIndex].length ; j++
+          for (
+            let j = 0;
+            j < this.state.palabras[this.state.currentWordIndex].length;
+            j++
           ) {
             console.log(temp);
             if (j == i) {
-              flag=true;
+              flag = true;
               temp = replaceAt(
                 j,
                 this.state.palabras[this.state.currentWordIndex].charAt(i),
@@ -77,7 +80,8 @@ export default class Ahorcadito extends Component {
         }
         if (
           this.state.palabras[this.state.currentWordIndex] !=
-          this.state.input.trim() && !flag
+            this.state.input.trim() &&
+          !flag
         ) {
           if (this.state.currentImg == base) {
             this.setState({ currentImg: cabeza });

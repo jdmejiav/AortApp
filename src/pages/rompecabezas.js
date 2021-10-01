@@ -5,7 +5,7 @@ import base from "../components/images/axilar.jpeg";
 import cabeza from "../components/images/celateral.jpeg";
 import cuerpo from "../components/images/mesentrica.jpeg";
 import brazoDerecho from "../components/images/ovarica.jpeg";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default class Rompecabezas extends Component {
   constructor() {
@@ -26,12 +26,13 @@ export default class Rompecabezas extends Component {
     return (
       <div>
         <NavBarLog />
-        <div style={{
-          "display":"flex",
-          "flex-direction":"column",
-          "align-items":"center"
-
-        }}>
+        <div
+          style={{
+            display: "flex",
+            "flex-direction": "column",
+            "align-items": "center",
+          }}
+        >
           <div
             style={{
               margin: "60px",
@@ -44,13 +45,16 @@ export default class Rompecabezas extends Component {
               imageSrc={this.state.imagenes[this.state.index]}
               rows={4}
               columns={4}
-
               onSolved={() => {
                 this.setState({ finished: true });
               }}
             />
           </div>
-          {this.state.finished && <Link className="btn-volver" to="/">Regresar</Link>}
+          {this.state.finished && (
+            <Link className="btn-volver" to="/">
+              Regresar
+            </Link>
+          )}
         </div>
       </div>
     );

@@ -13,9 +13,6 @@ import PrivateRoute from "./firebase/PrivateRoute";
 import Signup from "./pages/signup";
 import Arterias from "./pages/Arterias";
 
-
-
-
 function App() {
   return (
     <div>
