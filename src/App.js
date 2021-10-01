@@ -11,6 +11,7 @@ import HomePage from "./pages/rolette";
 import { AuthProvider } from "./firebase/AuthContext";
 import PrivateRoute from "./firebase/PrivateRoute";
 import Signup from "./pages/signup";
+import Arterias from "./pages/Arterias";
 
 
 
@@ -29,6 +30,7 @@ function App() {
             <PrivateRoute exact path="/ahorcadito" component={AhorcaditoPage} />
             <PrivateRoute exact path="/jigsaw" component={Rompecabezas} />
             <PrivateRoute exact path="/card" component={CardPage} />
+            <PrivateRoute exact path="/juegoarterias" component={Arterias} />
           </Switch>
         </AuthProvider>
       </BrowserRouter>

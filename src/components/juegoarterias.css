@@ -1,0 +1,39 @@
+.lista-juego{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    flex-direction: column;
+    width: fit-content;
+    border: 0.12rem solid;
+    border-color: darkgray;
+    border-radius: 20px;
+    
+}
+.imagen{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    flex-direction: column;
+}
+.center{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.padding-top{
+    padding-top: 50px;
+}
+.margin-bottom{
+    margin-bottom: 50px;
+}
+
+
+.item{
+    border: .1rem solid;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    border-color: darkgray;
+    padding:0.6rem;
+    width: 30rem;
+}
