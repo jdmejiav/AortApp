@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import NavBarLog from "../components/NavBar";
+import NavBarLog from "../components/NavBarLog";
 import { JigsawPuzzle } from "../components/index";
 import base from "../components/images/axilar.jpeg";
 import cabeza from "../components/images/celateral.jpeg";

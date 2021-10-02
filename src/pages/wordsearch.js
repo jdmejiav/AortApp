@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import WordSearch from "../components/wordsearch";
-import NavBarLog from "../components/NavBar";
+import NavBarLog from "../components/NavBarLog";
 
 export default class WordSearchPage extends Component {
   render() {

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Button } from "./button";
 import { Link, useHistory } from "react-router-dom";
 import "./Navbar.css";
 import { useAuth } from "../firebase/AuthContext";
 
-function NavBar() {
+function NavBarLog() {
   const { currentUser, logout } = useAuth();
   const history = useHistory();
   const [click, setClick] = useState(false);
@@ -34,6 +33,8 @@ function NavBar() {
               Página principal
             </Link>
           </li>
+          <li>
+          </li>
           <li className="nav-item">
             <Link className="nav-links" onClick={handleLogout}>
               Logout
@@ -45,4 +46,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default NavBarLog;

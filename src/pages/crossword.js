@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import CrosswordComponent from "../components/crossword";
-import Navbar from "../components/NavBar";
+import NavbarLog from "../components/NavBarLog";
 
 export default class CrosswordPage extends Component {
   constructor() {
@@ -10,7 +10,7 @@ export default class CrosswordPage extends Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <NavbarLog />
         <CrosswordComponent />
       </div>
     );

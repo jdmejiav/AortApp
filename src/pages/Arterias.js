@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import JuegoArterias from "../components/juegoarterias";
-import NavBar from "../components/NavBar";
+import NavBarLog from "../components/NavBarLog";
 
 export default class Arterias extends Component {
   render() {
     return (
       <>
-        <NavBar />
+        <NavBarLog/>
         <JuegoArterias />
       </>
     );
