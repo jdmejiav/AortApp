@@ -12,6 +12,9 @@ import { AuthProvider } from "./firebase/AuthContext";
 import PrivateRoute from "./firebase/PrivateRoute";
 import Signup from "./pages/signup";
 import Arterias from "./pages/Arterias";
+import Home from "./pages/home";
+
+
 
 function App() {
   return (
@@ -19,7 +22,7 @@ function App() {
       <BrowserRouter>
         <AuthProvider>
           <Switch>
-            <PrivateRoute exact path="/" component={HomePage} />
+            <PrivateRoute exact path="/" component={Home} />
             <PrivateRoute exact path="/wordsearch" component={WordSearchPage} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={Signup} />
