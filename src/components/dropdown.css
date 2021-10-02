@@ -1,5 +1,5 @@
 .dropdown-menu {
-  background: #1888ff;
+  background: red;
   width: 200px;
   position: absolute;
   top: 80px;
@@ -18,10 +18,6 @@
 
 .dropdown-menu.clicked {
   display: none;
-}
-.dropdown-menu ul {
-  margin: 0%;
-  padding: 0%;
 }
 
 .dropdown-link {

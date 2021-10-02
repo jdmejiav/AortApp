@@ -22,8 +22,6 @@
 }
 
 .nav-menu {
-  padding: 0%;
-  margin: 0%;
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 10px;
@@ -45,9 +43,7 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
-.navbar-logo:hover{
-  color: #1888ff;
-}
+
 .nav-links:hover {
   background-color: #1888ff;
   border-radius: 4px;
@@ -57,9 +53,7 @@
 .fa-bars {
   color: #fff;
 }
-.fa-bars:hover{
-  color: #1888ff;
-}
+
 .nav-links-mobile {
   display: none;
 }
@@ -67,8 +61,6 @@
 .menu-icon {
   display: none;
 }
-
-
 
 @media screen and (max-width: 960px) {
   .NavbarItems {
@@ -92,8 +84,7 @@
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 20;
-    height: 100%;
+    z-index: 1;
   }
 
   .nav-links {
