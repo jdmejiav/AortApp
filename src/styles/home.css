@@ -37,3 +37,24 @@ h1{
     width: 50vw;
     height: 100%;
 }
+
+@media screen and (max-width: 960px) {
+    .container-home{
+        padding: 1.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .cuadro-texto{
+        margin-top: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .cuadro-texto2{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    
+    }
+    
+  }
+  
