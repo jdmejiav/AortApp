@@ -10,13 +10,21 @@ h1{
 
 .texto-home{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .cuadro-texto{
-    margin: 5rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.cuadro-texto2{
+    margin-left: 5rem;
+    margin-right: 5rem;
 
 }
+
 .titulo{
 
     
