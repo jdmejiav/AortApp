@@ -34,7 +34,7 @@ export default class Home extends React.Component {
             <div className="texto-home">
               <div className="cuadro-texto2">
                 <div className="titulo">
-                  <h1>La Aorta:</h1>
+                  <h1>Objetivo:</h1>
                 </div>
                 <p>
                   La aorta es la principal arteria del organismo. Se trata de un

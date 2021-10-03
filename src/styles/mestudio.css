@@ -1,0 +1,25 @@
+.list-texts {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.item-text{
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid darkgray ;
+    border-radius: 10px;
+}
+
+.tittle{
+    font-size: x-large;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .list-texts {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+
+}

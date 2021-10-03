@@ -13,7 +13,7 @@ import PrivateRoute from "./firebase/PrivateRoute";
 import Signup from "./pages/signup";
 import Arterias from "./pages/Arterias";
 import Home from "./pages/home";
-
+import MEstudio from "./pages/mestudio";
 
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
             <PrivateRoute exact path="/jigsaw" component={Rompecabezas} />
             <PrivateRoute exact path="/card" component={CardPage} />
             <PrivateRoute exact path="/juegoarterias" component={Arterias} />
+            <PrivateRoute exact path="/mestudios" component={MEstudio} />
           </Switch>
         </AuthProvider>
       </BrowserRouter>

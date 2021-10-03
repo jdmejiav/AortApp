@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { Button } from './button';
-import { Link,useHistory } from 'react-router-dom';
+import React, { useState } from "react";
+import { Button } from "./button";
+import { Link, useHistory } from "react-router-dom";
 import { useAuth } from "../firebase/AuthContext";
-import './Navbar.css';
-import Dropdown from './dropdown';
+import "./Navbar.css";
+import Dropdown from "./dropdown";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -11,7 +11,6 @@ function Navbar() {
 
   const { currentUser, logout } = useAuth();
   const history = useHistory();
-
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -41,36 +40,39 @@ function Navbar() {
 
   return (
     <>
-      <nav className='navbar'>
-        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+      <nav className="navbar">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           ArteriApp
           <i class="fas fa-heartbeat"></i>
         </Link>
-        <div className='menu-icon' onClick={handleClick}>
-          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+        <div className="menu-icon" onClick={handleClick}>
+          <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
-        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
-            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <Link to="/mestudios" className="nav-links" onClick={closeMobileMenu}>
+              M. Estudios
+            </Link>
+          </li>
+
+          <li className="nav-item">
+            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
               Pagina Principal
             </Link>
           </li>
           <li
-            className='nav-item'
+            className="nav-item"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link
-              className='nav-links'
-              onClick={closeMobileMenu}
-            >
-              Juegos <i className='fas fa-caret-down' />
+            <Link className="nav-links" onClick={closeMobileMenu}>
+              Juegos <i className="fas fa-caret-down" />
             </Link>
             {dropdown && <Dropdown />}
           </li>
 
-          <li className='nav-item'>
-          <Link className="nav-links" onClick={handleLogout}>
+          <li className="nav-item">
+            <Link className="nav-links" onClick={handleLogout}>
               Logout
             </Link>
           </li>
