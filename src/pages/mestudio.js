@@ -1,6 +1,13 @@
 import React from "react";
 import Navbar from "../components/NavBarLog";
 import "../styles/mestudio.css";
+
+import aaxilar from "../components/images/aaxilar.png";
+import arenales from "../components/images/arenales.png";
+import asubclavia from "../components/images/asubclavia.png";
+import diafragma from "../components/images/diafragma.png";
+import uiliaca from "../components/images/uiliaca.png";
+
 export default class MEstudio extends React.Component {
   render() {
     return (
@@ -111,6 +118,36 @@ export default class MEstudio extends React.Component {
                 Irriga los músculos psoas mayores y menores, transverso
                 abdominal, oblicuo interno del abdomen.
               </p>
+            </li>
+          </ul>
+
+          <div className="center">
+            <h1 className="tittle">
+              Estas son algunas de las imágenes que encontrarás en el
+              laboratorio de anatomía:
+            </h1>
+          </div>
+
+          <ul className="list-img">
+            <li className="item-img">
+              <h1 className="tittle">Arteria Axilar</h1>
+              <img className="img-container" src={aaxilar}></img>
+            </li>
+            <li className="item-img">
+              <h1 className="tittle">Arterias Renales</h1>
+              <img className="img-container" src={arenales}></img>
+            </li>
+            <li className="item-img">
+              <h1 className="tittle">Arteria Subclavia</h1>
+              <img className="img-container" src={asubclavia}></img>
+            </li>
+            <li className="item-img">
+              <h1 className="tittle">Diafragma</h1>
+              <img className="img-container" src={diafragma}></img>
+            </li>
+            <li className="item-img">
+              <h1 className="tittle">Unión Iliaca</h1>
+              <img className="img-container" src={uiliaca}></img>
             </li>
           </ul>
         </div>

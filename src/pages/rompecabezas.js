@@ -47,6 +47,7 @@ export default class Rompecabezas extends Component {
               columns={4}
               onSolved={() => {
                 this.setState({ finished: true });
+                alert("Felicitaciones")
               }}
             />
           </div>
