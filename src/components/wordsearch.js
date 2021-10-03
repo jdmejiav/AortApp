@@ -3,280 +3,16 @@ import "./wordsearch.css";
 
 // Code Taken from https://codepen.io/imdigvijay/full/gqzJKX
 // Modified to work on this project
-/*
-var completeList = [
-  "Andra Pradesh",
-  "Arunachal Pradesh",
-  "Assam",
-  "Bihar",
-  "Chhattisgarh",
-  "Goa",
-  "Gujarat",
-  "Haryana",
-  "Himachal Pradesh",
-  "Jammu and Kashmir",
-  "Jharkhand",
-  "Karnataka",
-  "Kerala",
-  "Madya Pradesh",
-  "Maharashtra",
-  "Manipur",
-  "Meghalaya",
-  "Mizoram",
-  "Nagaland",
-  "Orissa",
-  "Punjab",
-  "Rajasthan",
-  "Sikkim",
-  "Tamil Nadu",
-  "Telagana",
-  "Tripura",
-  "Uttaranchal",
-  "Uttar Pradesh",
-  "West Bengal",
-  "Andaman and Nicobar Islands",
-  "Chandigarh",
-  "Dadar and Nagar Haveli",
-  "Daman and Diu",
-  "Delhi",
-  "Lakshadeep",
-  "Pondicherry",
-  "Hyderabad",
-  "Amaravati",
-  "Itangar",
-  "Dispur",
-  "Patna",
-  "Raipur",
-  "Panaji",
-  "Gandhinagar",
-  "Chandigarh",
-  "Shimla",
-  "Srinagar",
-  "Jammu",
-  "Ranchi",
-  "Bangalore",
-  "Thiruvananthapuram",
-  "Bhopal",
-  "Mumbai",
-  "Imphal",
-  "Shillong",
-  "Aizawi",
-  "Kohima",
-  "Bhubaneshwar",
-  "Chandigarh",
-  "Jaipur",
-  "Gangtok",
-  "Chennai",
-  "Hyderabad",
-  "Agartala",
-  "Dehradun",
-  "Lucknow",
-  "Kolkata",
-  "Capital",
-  "Port Blair",
-  "Chandigarh",
-  "Silvassa",
-  "Daman",
-  "Delhi",
-  "Kavaratti",
-  "Pondicherry",
-  "Afghanistan",
-  "Albania",
-  "Algeria",
-  "Andorra",
-  "Angola",
-  "Argentina",
-  "Armenia",
-  "Australia",
-  "Austria",
-  "Azerbaijan",
-  "Bahrain",
-  "Bangladesh",
-  "Barbados",
-  "Belarus",
-  "Belgium",
-  "Belize",
-  "Benin",
-  "Bhutan",
-  "Bolivia",
-  "Chad",
-  "Chile",
-  "China",
-  "Colombia",
-  "Comoros",
-  "Denmark",
-  "Dominica",
-  "Eritrea",
-  "Estonia",
-  "Eswatini",
-  "Ethiopia",
-  "Fiji",
-  "Finland",
-  "France",
-  "Gabon",
-  "Georgia",
-  "Germany",
-  "Ghana",
-  "Greece",
-  "Grenada",
-  "Guatemala",
-  "Guinea",
-  "Guinea-Bissau",
-  "Guyana",
-  "Haiti",
-  "Honduras",
-  "Hungary",
-  "Iceland",
-  "India",
-  "Indonesia",
-  "Iran",
-  "Iraq",
-  "Ireland",
-  "Israel",
-  "Italy",
-  "Jamaica",
-  "Japan",
-  "Jordan",
-  "Kazakhstan",
-  "Kenya",
-  "Kiribati",
-  "Kosovo",
-  "Kuwait",
-  "Kyrgyzstan",
-  "Laos",
-  "Latvia",
-  "Lebanon",
-  "Lesotho",
-  "Liberia",
-  "Libya",
-  "Liechtenstein",
-  "Lithuania",
-  "Luxembourg",
-  "Madagascar",
-  "Malawi",
-  "Malaysia",
-  "Maldives",
-  "Mali",
-  "Malta",
-  "Mauritania",
-  "Mauritius",
-  "Mexico",
-  "Micronesia",
-  "Moldova",
-  "Monaco",
-  "Mongolia",
-  "Montenegro",
-  "Morocco",
-  "Mozambique",
-  "Myanmar",
-  "Namibia",
-  "Nauru",
-  "Nepal",
-  "Netherlands",
-  "New Zealand",
-  "Nicaragua",
-  "Niger",
-  "Nigeria",
-  "North Macedonia",
-  "Norway",
-  "Oman",
-  "Taiwan",
-  "Tajikistan",
-  "Tanzania",
-  "Thailand",
-  "Togo",
-  "Tonga",
-  "Trinidad and Tobago",
-  "Tunisia",
-  "Turkey",
-  "Turkmenistan",
-  "Tuvalu",
-  "Apple",
-  "Watermelon",
-  "Orange",
-  "Pear",
-  "Cherry",
-  "Strawberry",
-  "Nectarine",
-  "Grape",
-  "Mango",
-  "Blueberry",
-  "Pomegranate",
-  "Plum",
-  "Banana",
-  "Raspberry",
-  "Mandarin",
-  "Jackfruit",
-  "Papaya",
-  "Kiwi",
-  "Pineapple",
-  "Lime",
-  "Lemon",
-  "Apricot",
-  "Grapefruit",
-  "Melon",
-  "Coconut",
-  "Avocado",
-  "Peach",
-  "Great-grandfather",
-  "Great-grandmother",
-  "Great-uncle",
-  "Grandfather",
-  "Grandmother",
-  "Great-aunt",
-  "Uncle",
-  "Aunt",
-  "Father",
-  "Mother",
-  "Sister",
-  "Brother",
-  "Husband",
-  "Wife",
-  "Cousin",
-  "Nephew",
-  "Niece",
-  "Son",
-  "Daughter",
-  "Grandson",
-  "Granddaughter",
-  "Bolt",
-  "Nail",
-  "Screwdriver",
-  "Bradawl",
-  "Handsaw",
-  "Nut",
-  "Screw",
-  "Wrench",
-  "Backsaw",
-  "Mallet",
-  "Hammer",
-  "Hacksaw",
-  "Chainsaw",
-  "Brace",
-  "Toolbox",
-  "Corkscrew",
-  "Plunger",
-  "Stepladder",
-  "Apple",
-  "Orange",
-  "Table",
-  "Elephant",
-  "Total",
-  "Super",
-  "React",
-  "Angular",
-  "Selenium",
-  "Automation",
-];
-*/
+
+
 
 var completeList = [
   "Aorta",
-  "Arco Aortico",
+  "ArcoAortico",
   "Subclavia",
   "Iliaca",
-  "Aorta Abdominal",
-  "Aorta Celiaca",
+  "AortaAbdominal",
+  "AortaCeliaca",
   "Mesenterica",
   "Gonadal",
 ];
@@ -676,6 +412,7 @@ WSGenerator.prototype.TestString = function (testStr) {
   if (reverseMatched) {
     reverseMatchFound = this.isAlreadyFound(reverseStr);
   }
+
   console.log(
     str,
     reverseStr,
@@ -809,6 +546,7 @@ class Row extends React.Component {
 
 //grid.js
 class Grid extends React.Component {
+  
   constructor(props) {
     super(props);
 
@@ -819,8 +557,10 @@ class Grid extends React.Component {
     this.selectionStart = this.selectionStart.bind(this);
     this.selectionEnd = this.selectionEnd.bind(this);
     this.hasSelectionStarted = this.hasSelectionStarted.bind(this);
+
     this.state = {
       ws: this.ws,
+      correctWords: 0,
     };
   }
 
@@ -855,6 +595,15 @@ class Grid extends React.Component {
             str.split("").reverse().join("").toLowerCase() ===
               item.text.toLowerCase()
           ) {
+            console.log(this.state.correctWords);
+            const temp = this.state.correctWords+1;
+            console.log(temp)
+            this.setState({ correctWords: temp });
+            
+            if (this.state.correctWords == 7) {
+              alert("Felicidades, completaste la sopa de letras");
+            }
+
             item.found = true;
             console.log(item);
           }
@@ -907,40 +656,43 @@ class Grid extends React.Component {
     let toastVisible =
       this.props.ws.wordList.length === this.props.ws.alreadyFound.length;
     return (
-      <div className="wordsearch-container">
-        <div className="grid" style={gridStyle}>
-          {gridArr.map((row, i) => {
-            return (
-              <Row
-                row={row}
-                rowIndex={i}
-                key={i}
-                selectionStart={this.selectionStart}
-                selectionEnd={this.selectionEnd}
-                hasSelectionStarted={this.hasSelectionStarted}
-              />
-            );
-          })}
-        </div>
-        <div id="word-list">
-          <div
-            style={{ display: toastVisible ? "block" : "block" }}
-            className="ws-my-page-success-toast"
-          >
-            Palabras
-          </div>
-          <ul>
-            {wordList.map((item, i) => {
-              let styleObj = {
-                textDecoration: item.found ? "line-through" : "none",
-              };
+      <div>
+        <div className="center padding-top">Palabras correctas: {this.state.correctWords}</div>
+        <div className="wordsearch-container">
+          <div className="grid" style={gridStyle}>
+            {gridArr.map((row, i) => {
               return (
-                <li key={i} style={styleObj}>
-                  {item.text}
-                </li>
+                <Row
+                  row={row}
+                  rowIndex={i}
+                  key={i}
+                  selectionStart={this.selectionStart}
+                  selectionEnd={this.selectionEnd}
+                  hasSelectionStarted={this.hasSelectionStarted}
+                />
               );
             })}
-          </ul>
+          </div>
+          <div id="word-list">
+            <div
+              style={{ display: toastVisible ? "block" : "block" }}
+              className="ws-my-page-success-toast"
+            >
+              Palabras
+            </div>
+            <ul>
+              {wordList.map((item, i) => {
+                let styleObj = {
+                  textDecoration: item.found ? "line-through" : "none",
+                };
+                return (
+                  <li key={i} style={styleObj}>
+                    {item.text}
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     );
