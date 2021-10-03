@@ -131,23 +131,33 @@ export default class MEstudio extends React.Component {
           <ul className="list-img">
             <li className="item-img">
               <h1 className="tittle">Arteria Axilar</h1>
-              <img className="img-container" src={aaxilar}></img>
+              <div className="center">
+                <img className="img-container" src={aaxilar}></img>
+              </div>
             </li>
             <li className="item-img">
               <h1 className="tittle">Arterias Renales</h1>
-              <img className="img-container" src={arenales}></img>
+              <div className="center">
+                <img className="img-container" src={arenales}></img>
+              </div>
             </li>
             <li className="item-img">
               <h1 className="tittle">Arteria Subclavia</h1>
-              <img className="img-container" src={asubclavia}></img>
+              <div className="center">
+                <img className="img-container" src={asubclavia}></img>
+              </div>
             </li>
             <li className="item-img">
               <h1 className="tittle">Diafragma</h1>
-              <img className="img-container" src={diafragma}></img>
+              <div className="center">
+                <img className="img-container" src={diafragma}></img>
+              </div>
             </li>
             <li className="item-img">
               <h1 className="tittle">Unión Iliaca</h1>
-              <img className="img-container" src={uiliaca}></img>
+              <div className="center">
+                <img className="img-container" src={uiliaca}></img>
+              </div>
             </li>
           </ul>
         </div>

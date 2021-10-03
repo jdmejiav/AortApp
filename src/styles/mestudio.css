@@ -21,11 +21,9 @@
 
 
 .item-img{
-  display: block;
   
-  margin: 3rem;
+  margin: 2rem;
   padding: 1rem;
-  padding-left: 2.2rem;
   border: 1px solid darkgray ;
   border-radius: 10px;
   align-items: center;
