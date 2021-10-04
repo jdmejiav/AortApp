@@ -11,7 +11,13 @@ import uiliaca from "../components/images/uiliaca.png";
 export default class MEstudio extends React.Component {
   render() {
     return (
-      <div>
+      <div
+        style={{
+          background: "rgb(247,225,243)",
+          background:
+            " linear-gradient(0deg, rgba(247,225,243,1) 5%, rgba(151,214,240,1) 69%, rgba(154,192,255,1) 100%)",
+        }}
+      >
         <Navbar></Navbar>
         <div>
           <ul className="list-texts">
@@ -130,31 +136,46 @@ export default class MEstudio extends React.Component {
 
           <ul className="list-img">
             <li className="item-img">
-              <h1 className="tittle">Arteria Axilar</h1>
+              <div className="center">
+                <h1 className="tittle">Arteria Axilar</h1>
+              </div>
+
               <div className="center">
                 <img className="img-container" src={aaxilar}></img>
               </div>
             </li>
             <li className="item-img">
-              <h1 className="tittle">Arterias Renales</h1>
+              <div className="center">
+                <h1 className="tittle">Arterias Renales</h1>
+              </div>
+
               <div className="center">
                 <img className="img-container" src={arenales}></img>
               </div>
             </li>
             <li className="item-img">
-              <h1 className="tittle">Arteria Subclavia</h1>
+              <div className="center">
+                <h1 className="tittle">Arteria Subclavia</h1>
+              </div>
+
               <div className="center">
                 <img className="img-container" src={asubclavia}></img>
               </div>
             </li>
             <li className="item-img">
-              <h1 className="tittle">Diafragma</h1>
+              <div className="center">
+                <h1 className="tittle">Diafragma</h1>
+              </div>
+
               <div className="center">
                 <img className="img-container" src={diafragma}></img>
               </div>
             </li>
             <li className="item-img">
-              <h1 className="tittle">Unión Iliaca</h1>
+              <div className="center">
+                <h1 className="tittle">Unión Iliaca</h1>
+              </div>
+
               <div className="center">
                 <img className="img-container" src={uiliaca}></img>
               </div>

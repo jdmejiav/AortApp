@@ -30,7 +30,7 @@ function NavBar() {
     <>
       <nav className="navbar">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          AortApp <i class="fas fa-heartbeat"></i>
+          AortApp{" "} <i class="fas fa-heartbeat"></i>
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />

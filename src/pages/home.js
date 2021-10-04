@@ -6,7 +6,13 @@ import home from "../components/images/home.png";
 export default class Home extends React.Component {
   render() {
     return (
-      <div>
+      <div
+        style={{
+          background: "rgb(255,255,255)",
+          background:
+            "linear-gradient(90deg, rgba(255,255,255,0.9976365546218487) 47%, rgba(150,235,241,1) 100%)",
+        }}
+      >
         <NavBarLog />
 
         <div className="container-home">
@@ -16,7 +22,7 @@ export default class Home extends React.Component {
           <div className="texto-home">
             <div className="cuadro-texto">
               <div className="titulo">
-                <h1>Objetivo:</h1>
+                <h1>Objetivo</h1>
               </div>
 
               <p>
@@ -34,7 +40,7 @@ export default class Home extends React.Component {
             <div className="texto-home">
               <div className="cuadro-texto2">
                 <div className="titulo">
-                  <h1>Objetivo:</h1>
+                  <h1>La Aorta</h1>
                 </div>
                 <p>
                   La aorta es la principal arteria del organismo. Se trata de un
