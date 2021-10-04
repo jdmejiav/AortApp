@@ -4,6 +4,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
 }
 
 .login-container {
@@ -11,6 +12,7 @@
   flex-direction: column;
   border-color: #1888ff;
   padding: 20px;
+  width: 30rem;
 }
 .titulo-login {
   color: rgb(32, 32, 32);

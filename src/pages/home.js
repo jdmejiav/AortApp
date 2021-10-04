@@ -2,6 +2,7 @@ import React from "react";
 import NavBarLog from "../components/NavBarLog";
 import "../styles/home.css";
 import home from "../components/images/home.png";
+import udea from "../components/images/Udea.png"
 
 export default class Home extends React.Component {
   render() {
@@ -68,6 +69,10 @@ export default class Home extends React.Component {
                   al cuerpo de la 4ta vértebra lumbar.
                 </p>
               </div>
+            </div>
+
+            <div className="center">
+              <img src={udea}></img>
             </div>
           </div>
         </div>

@@ -69,9 +69,6 @@ export default function Signup() {
               </p>
             </div>
           </div>
-          <div className="login-img-container">
-            <img className="login-img" src={loginImg}></img>
-          </div>
         </section>
       </div>
     </div>
