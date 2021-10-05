@@ -22,7 +22,7 @@ export default class MEstudio extends React.Component {
         <div>
           <ul className="list-texts">
             <li className="item-text">
-              <h1 className="tittle">TRONCO BRAQUIOCEFALICO</h1>
+              <h1 className="tittle">Tronco Branquiocefálico</h1>
               <p>
                 Vasculariza miembros anteriores, del cuello, cabeza y región
                 ventral del tórax. El tronco braquiocefálico origina la arteria
@@ -30,7 +30,7 @@ export default class MEstudio extends React.Component {
               </p>
             </li>
             <li className="item-text">
-              <h1 className="tittle">A. SUBCLAVIA</h1>
+              <h1 className="tittle">Arteria Subclavia</h1>
               <p>
                 Irriga el cuello, miembro anterior, parte ventral y craneal del
                 tórax, también irriga el cerebro a través de la arteria
@@ -38,21 +38,21 @@ export default class MEstudio extends React.Component {
               </p>
             </li>
             <li className="item-text">
-              <h1 className="tittle">A. AXILAR</h1>
+              <h1 className="tittle">Arteria Axilar</h1>
               <p>
                 Es la continuación de la arteria subclavia. Irriga el miembro
                 torácico
               </p>
             </li>
             <li className="item-text">
-              <h1 className="tittle">A. CAROTIDA COMUN</h1>
+              <h1 className="tittle">Arteria Carótida común</h1>
               <p>
                 Discurre por la región ventral del cuello, de la tráquea y unas
                 cuantas ramas para el esófago, laringe y músculos anexos.
               </p>
             </li>
             <li className="item-text">
-              <h1 className="tittle">A. SACRA MEDIA </h1>
+              <h1 className="tittle">Arteria Sacra media</h1>
               <p>
                 Vascularización del cono medular, últimos ganglios espinales,
                 músculos de la grupa, lumbares internos y sacrocaudales
@@ -60,7 +60,7 @@ export default class MEstudio extends React.Component {
               </p>
             </li>
             <li className="item-text">
-              <h1 className="tittle">A. Iliaca externa</h1>
+              <h1 className="tittle">Arteria Iliaca externa</h1>
               <p>
                 Irrigación del miembro pelviano, da origen a la arteria
                 circunfleja iliaca profunda, en el perro sale de la aorta. La
@@ -69,7 +69,7 @@ export default class MEstudio extends React.Component {
               </p>
             </li>
             <li className="item-text">
-              <h1 className="tittle">A. ILIACA INTERNA</h1>
+              <h1 className="tittle">Arteria Iliaca interna</h1>
               <p>
                 Irriga órganos de la cavidad de la pelvis, pared de la cavidad,
                 gluteos y al seguir su irrigación llega a los uréteres, vejiga,
@@ -77,7 +77,7 @@ export default class MEstudio extends React.Component {
               </p>
             </li>
             <li className="item-text">
-              <h1 className="tittle">A. CELIACA</h1>
+              <h1 className="tittle">Arteria Celiaca</h1>
               <p>
                 A su lado izquierdo se relaciona con el estómago mientras que,
                 en su lado derecho con el hígado, glándula adrenal y en su lado
@@ -87,21 +87,21 @@ export default class MEstudio extends React.Component {
               </p>
             </li>
             <li className="item-text">
-              <h1 className="tittle">A. MESENTERICA CRANEAL</h1>
+              <h1 className="tittle">Arteria Meséntrica Craneal</h1>
               <p>
                 Irriga el intestino, y mitad caudal del duodeno descendente
                 hasta la parte craneal del colon descendente.
               </p>
             </li>
             <li className="item-text">
-              <h1 className="tittle">A. MESENTERICA CAUDAL</h1>
+              <h1 className="tittle">Arteria Meséntrica Caudal</h1>
               <p>
                 Irriga porciones media y caudal del colon descendente, también
                 porción craneal del recto
               </p>
             </li>
             <li className="item-text">
-              <h1 className="tittle">A. RENALES</h1>
+              <h1 className="tittle">Arteria Renal</h1>
               <p>
                 Irriga los riñones. La arteria renal derecha es mas craneal,
                 dividiéndose en ventral y dorsal.
@@ -109,7 +109,7 @@ export default class MEstudio extends React.Component {
             </li>
 
             <li className="item-text">
-              <h1 className="tittle">ARTERIA GONADAL</h1>
+              <h1 className="tittle">Arteria Gonadal</h1>
               <p>
                 Macho(testiculares): Irriga el epidídimo, cordón espermático,
                 testículo y conducto deferente Hembra(ováricas): irriga el
@@ -119,7 +119,7 @@ export default class MEstudio extends React.Component {
             </li>
 
             <li className="item-text">
-              <h1 className="tittle">ARTERIA CIRCUNFLEJA ILIACA PROFUNDA </h1>
+              <h1 className="tittle">Arteria Circunfleja illiaca profunda</h1>
               <p>
                 Irriga los músculos psoas mayores y menores, transverso
                 abdominal, oblicuo interno del abdomen.
