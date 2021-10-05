@@ -10,7 +10,7 @@ export default class JuegoArterias extends Component {
     this.state = {
       options: [
         { value: 1, label: "Arteria Mesentérica Caudal" },
-        { value: 2, label: "Arteria Sacial Mediana" },
+        { value: 2, label: "Arteria Sacral Mediana" },
         { value: 3, label: "Arteria Iliaca Externa izquierda" },
         { value: 4, label: "Arteria Renal Izquierda" },
         { value: 5, label: "Arteria Meséntrica cranial" },
