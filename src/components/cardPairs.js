@@ -19,8 +19,8 @@ import cuerpo from "./images/mesentrica.jpeg";
 
 import brazoDerecho from "./images/ovarica.jpeg";
 
-import piernaDerecha from "./images/pierna derecha.png";
-import piernaIzquierda from "./images/pierna izquierda.png";
+import piernaDerecha from "./images/diafragma.png";
+import piernaIzquierda from "./images/asubclavia.png";
 
 const uniqueElementsArray = [
   {
