@@ -54,7 +54,7 @@ export default class Home extends React.Component {
                   Esta primera porción de la aorta que se denomina aorta
                   ascendente, sale del ventrículo izquierdo y se dirige hacia
                   craneal (arriba y a lateral derecho (a la derecha). Continua
-                  con el arco aórtica o también conocido como cayado aórtico,
+                  con el arco aórtico o también conocido como cayado aórtico,
                   este se sitúa detrás del manubrio esternal, girando hacia
                   lateral izquierdo (a la izquierda) y hacia dorsal (atrás),
                   formando así un arco de convexidad superior, el cual rodea el
@@ -63,7 +63,7 @@ export default class Home extends React.Component {
                   de la 4ta vértebra torácica. Después de estas 2 partes viene
                   la aorta descendente, que se divide en dos secciones, la aorta
                   torácica descendente, la cual baja hasta el diafragma y
-                  atravesando por el orificio aórtico llega al abdomen, a partir
+                  atravesando por el hiato aórtico llega al abdomen, a partir
                   de este punto se comienza a llamar aorta abdominal
                   descendente, siguiendo por la columna vertebral hasta llegar
                   al cuerpo de la 4ta vértebra lumbar.
