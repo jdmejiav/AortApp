@@ -12,7 +12,7 @@ var completeList = [
   "Subclavia",
   "Iliaca",
   "AortaAbdominal",
-  "AortaCeliaca",
+  "ArteriaCeliaca",
   "Mesenterica",
   "Gonadal",
 ];
