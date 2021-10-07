@@ -13,13 +13,12 @@ import { Link } from "react-router-dom";
 import Card from "./card";
 import "./cardPairs.scss";
 
-import base from "./images/axilar.jpeg";
-import cabeza from "./images/celateral.jpeg";
-import cuerpo from "./images/mesentrica.jpeg";
+import base from "./images/cardarenal.png";
+import cabeza from "./images/cardaaxilar.png";
+import cuerpo from "./images/cardunioniliaca.png";
+import brazoDerecho from "./images/cardaortatoracicadescendente.png";
 
-import brazoDerecho from "./images/ovarica.jpeg";
-
-import piernaDerecha from "./images/diafragma.png";
+import piernaDerecha from "./images/cardahortaabdominaldescendente.png";
 import piernaIzquierda from "./images/asubclavia.png";
 
 const uniqueElementsArray = [
@@ -184,7 +183,7 @@ export default function CardPairs() {
           )}
         </div>
         <div className="restart">
-          <Button onClick={handleRestart} color="primary" variant="contained">
+          <Button onClick={handleRestart} color="#1888ff" variant="contained">
             Reiniciar
           </Button>
         </div>

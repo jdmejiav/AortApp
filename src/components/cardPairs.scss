@@ -54,8 +54,8 @@
     align-items: stretch;
     gap: 1rem;
     margin: 0 auto;
-    width: 600px;
-    height: 600px;
+    width: fit-content;
+    height: fit-content;
     perspective: 100%;
     max-width: 720px;
   }
