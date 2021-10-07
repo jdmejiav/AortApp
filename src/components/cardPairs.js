@@ -19,7 +19,7 @@ import cuerpo from "./images/cardunioniliaca.png";
 import brazoDerecho from "./images/cardaortatoracicadescendente.png";
 
 import piernaDerecha from "./images/cardahortaabdominaldescendente.png";
-import piernaIzquierda from "./images/asubclavia.png";
+import piernaIzquierda from "./images/cardhiatoaortico.png";
 
 const uniqueElementsArray = [
   {

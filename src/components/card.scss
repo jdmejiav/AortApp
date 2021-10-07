@@ -9,9 +9,10 @@
   cursor: pointer;
 
   img {
-    padding-top: 30%;
+    padding-top: 15%;
     width: 95%;
     height: 60%;
+    object-fit: scale-down;
   }
 
   .card-face {
@@ -25,7 +26,7 @@
   }
 
   &.is-flipped {
-    transform: rotateY(180deg);
+    //transform: rotateY(180deg);
   }
 
   &.is-inactive {
