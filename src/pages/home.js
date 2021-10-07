@@ -30,12 +30,7 @@ export default class Home extends React.Component {
                 Esta página se diseñó como un método de estudio didáctico y
                 divertido, donde los estudiantes puedan comprender, analizar,
                 identificar y conocer la función de cada una de las ramas de la
-                aorta por su propio medio, además de esto servirá como una
-                alternativa extra para que los docentes evalúen el conocimiento
-                que han adquirido los estudiantes a lo largo de las clases
-                teórico-practicas, esto con el fin de convertir todo el material
-                de estudio en un mundo lleno de aprendizaje dónde jugar y
-                compartir con tus compañeros te ayudará en tu vida académica.
+                aorta por su propio medio.
               </p>
             </div>
             <div className="texto-home">
