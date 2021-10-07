@@ -18,14 +18,14 @@ const data = {
       col: 9,
     },
     4: {
-      clue: "La aorta se origina en la base del ventrículo (9 Letras)",
+      clue: "En perros se origina la arteria principal como subclavia (9 Letras)",
       answer: "IZQUIERDA",
       row: 7,
       col: 5,
     },
     6: {
       clue: "La aorta se origina en la base del ventrículo (11 Letras)",
-      answer: "ADVERTENCIA",
+      answer: "ADVENTICIA",
       row: 11,
       col: 3,
     },
@@ -51,7 +51,7 @@ const data = {
     },
     8: {
       clue: "La primera ramificación del arco aórtico es el tronco (16 Letras)",
-      answer: "BRANQUIOCEFALICO",
+      answer: "BRAQUIOCEFALICO",
       row: 21,
       col: 1,
     },

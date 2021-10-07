@@ -267,7 +267,7 @@ export default class MEstudio extends React.Component {
             </li>
             <li className="item-img">
               <div className="center">
-                <h1 className="tittle">Hiato Aortico</h1>
+                <h1 className="tittle">Hiato Aórtico</h1>
               </div>
 
               <div className="center">
