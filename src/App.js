@@ -14,6 +14,7 @@ import Signup from "./pages/signup";
 import Arterias from "./pages/Arterias";
 import Home from "./pages/home";
 import MEstudio from "./pages/mestudio";
+import References from "./pages/references";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <PrivateRoute exact path="/card" component={CardPage} />
             <PrivateRoute exact path="/juegoarterias" component={Arterias} />
             <PrivateRoute exact path="/mestudios" component={MEstudio} />
+            <PrivateRoute exact path="/referencias" component={References} />
           </Switch>
         </AuthProvider>
       </BrowserRouter>

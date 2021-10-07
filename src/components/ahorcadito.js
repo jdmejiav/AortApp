@@ -23,7 +23,7 @@ export default class Ahorcadito extends Component {
       wordToShow: "",
       hints: {
         hepatica: "Arteria que irriga el hígado",
-        costocervical: "La arteria escapular dorsal de que tronco se origina?",
+        costocervical: "¿La arteria escapular dorsal de que tronco se origina?",
         cuello: "Uno de los territorios perfundidos por la arteria subclavia",
       },
     };

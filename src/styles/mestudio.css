@@ -1,6 +1,6 @@
 .list-texts {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .list-img {
@@ -31,6 +31,18 @@
   justify-content: center;
 }
 
+.img-mestudio{
+  width: 400px;
+  height: 400px;
+  object-fit: scale-down;
+}
+
+
+.img-mestudio2{
+  width: 450px;
+  
+  object-fit: scale-down;
+}
 
 .tittle{
     font-size: x-large;

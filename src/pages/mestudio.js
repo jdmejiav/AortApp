@@ -8,6 +8,18 @@ import asubclavia from "../components/images/asubclavia.png";
 import diafragma from "../components/images/diafragma.png";
 import uiliaca from "../components/images/uiliaca.png";
 
+import aaxilar2 from "../components/images/aaxilarcontinuaciondelasubclavia.png";
+import acarotidacomun from "../components/images/acarotidacomun.png";
+import aceliaca from "../components/images/aceliaca.png";
+import acircunflejailiacaprofunda from "../components/images/acircunflejailiacaprofunda.png";
+import agonadal1 from "../components/images/agonadal1.png";
+import agonadal2 from "../components/images/agonadal2.png";
+import ailiacainternaexterna from "../components/images/ailiacainternaexterna.png";
+import amesentericacaudal from "../components/images/amesentericacaudal.png";
+import amesentericacraneal from "../components/images/amesentericacraneal.png";
+import arenal from "../components/images/arenal2.png";
+
+
 export default class MEstudio extends React.Component {
   render() {
     return (
@@ -28,6 +40,16 @@ export default class MEstudio extends React.Component {
                 ventral del tórax. El tronco braquiocefálico origina la arteria
                 subclavia izquierda y derecha.
               </p>
+
+              <h3>Arteria Carótida común</h3>
+              <p>
+                Discurre por la región ventral del cuello, de la tráquea y unas
+                cuantas ramas para el esófago, laringe y músculos anexos.
+              </p>
+              <div className="center">
+                <img className="img-mestudio" src={acarotidacomun}></img>
+              </div>
+              <p className="center">A. Carótida común . Imagen tomada de (Popesko, 1998)</p>
             </li>
             <li className="item-text">
               <h1 className="tittle">Arteria Subclavia</h1>
@@ -36,21 +58,18 @@ export default class MEstudio extends React.Component {
                 tórax, también irriga el cerebro a través de la arteria
                 vertebral.
               </p>
-            </li>
-            <li className="item-text">
-              <h1 className="tittle">Arteria Axilar</h1>
+              <h3>Arteria Axilar</h3>
               <p>
                 Es la continuación de la arteria subclavia. Irriga el miembro
                 torácico
               </p>
+              <div className="center">
+                <img className="img-mestudio" src={aaxilar2}></img>
+              </div>
+
+              <p className="center">A. Axilar, continuación de la subclavia. Imagen tomada de  anatomy dog-budras</p>
             </li>
-            <li className="item-text">
-              <h1 className="tittle">Arteria Carótida común</h1>
-              <p>
-                Discurre por la región ventral del cuello, de la tráquea y unas
-                cuantas ramas para el esófago, laringe y músculos anexos.
-              </p>
-            </li>
+            
             <li className="item-text">
               <h1 className="tittle">Arteria Sacra media</h1>
               <p>
@@ -180,6 +199,97 @@ export default class MEstudio extends React.Component {
                 <img className="img-container" src={uiliaca}></img>
               </div>
             </li>
+
+
+
+
+
+
+
+            <li className="item-img">
+              <div className="center">
+                <h1 className="tittle">Arteria Celiaca</h1>
+              </div>
+              <div className="center">
+                <img className="img-container img-mestudio2" src={aceliaca}></img>
+              </div>
+              <p className="center">A. Celíaca.  Imagen tomada de https://cutt.ly/JEX453D</p>
+            </li>
+            <li className="item-img">
+              <div className="center">
+                <h1 className="tittle">Arteria Celiaca Profunda</h1>
+              </div>
+
+              <div className="center">
+                <img className="img-container img-mestudio2" src={acircunflejailiacaprofunda}></img>
+              </div>
+              <p className="center">A. Circunfleja ilíaca profunda. Imagen tomada de https://cutt.ly/UEVqAEW</p>
+            </li>
+            <li className="item-img">
+              <div className="center">
+                <h1 className="tittle">Arteria gonadal</h1>
+              </div>
+
+              <div className="center">
+                <img className="img-container img-mestudio2" src={agonadal1}></img>
+              </div>
+              <p className="center">A. Gonadales. imágenes tomadas de Anatomy dog-budras</p>
+            </li>
+            <li className="item-img">
+              <div className="center">
+                <h1 className="tittle">Arteria gonadal</h1>
+              </div>
+
+              <div className="center">
+                <img className="img-container img-mestudio2" src={agonadal2}></img>
+              </div>
+              <p className="center">A. Gonadales. imágenes tomadas de Anatomy dog-budras</p>
+
+            </li>
+            <li className="item-img">
+              <div className="center">
+                <h1 className="tittle">Arteria Iliaca interna externa</h1>
+              </div>
+
+              <div className="center">
+                <img className="img-container img-mestudio2" src={ailiacainternaexterna}></img>
+              </div>
+              <p className="center">A. Ilíaca interna- externa. Imagen tomada de Konig tomo 2</p>
+            </li>
+            <li className="item-img">
+              <div className="center">
+                <h1 className="tittle">Arteria Meséntrica Caudal</h1>
+              </div>
+
+              <div className="center">
+                <img className="img-container img-mestudio2" src={amesentericacaudal}></img>
+              </div>
+              <p className="center">A. Mesentérica caudal. Imagen toma de https://anato.cl/</p>
+            </li>
+
+            <li className="item-img">
+              <div className="center">
+                <h1 className="tittle">Arteria Meséntrica Craneal</h1>
+              </div>
+
+              <div className="center">
+                <img className="img-container img-mestudio2" src={amesentericacraneal}></img>
+              </div>
+              <p className="center">A. Mesentérica craneal. Imagen tomada de  https://cutt.ly/YEX7Sus</p>
+            </li>
+
+            <li className="item-img">
+              <div className="center">
+                <h1 className="tittle">Arteria Renal</h1>
+              </div>
+
+              <div className="center">
+                <img className="img-container img-mestudio2" src={arenal}></img>
+              </div>
+              <p className="center">A. renal. tomada de anatomy dog-budras 
+</p>
+            </li>
+
           </ul>
         </div>
       </div>
